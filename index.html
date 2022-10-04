@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
     <!--шапка страницы-->
   <header class="page-header">
-    <div class="container main-nav">
+    <div class="container page-header__container">
         <nav class="page-navigation" >      
       <a href="/index.html" class="logo">
           <span class="accent">Web</span>Studio
@@ -27,6 +27,12 @@
           <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
       </ul>
       </nav>
+      <button type="button" class="open-mobile-menu-btn" data-menu-open>
+        <svg class="open-mobile-menu-btn__icon">
+          <use href="./images/icons2 (1).svg#icon-burger"></use>
+        </svg>
+      </button>
+
     <!--Контакті-->
     
       <ul class="contacts list">
@@ -43,6 +49,35 @@
     
       
     
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <button class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" >
+            <use href="./images/symbol-defs (1).svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <ul class="nav-mobile list">
+          <li class="nav-mobile__item"><a href="" class="nav-mobile__link nav-mobile__link_current">Студія</a></li>
+          <li class="nav-mobile__item"><a href="./portfolio.html" class="nav-mobile__link">Портфоліо</a></li>
+          <li class="nav-mobile__item"><a href="" class="nav-mobile__link">Контакти</a></li>
+        </ul>
+        <div class="mobile-menu__contacts">
+          <ul class="contacts-mobile list">
+          <li class="contacts-mobile__item"><a href="tel:+380961111111" class="contacts-mobile__link contacts-mobile__link_theme_blue">
+            +38 096 111 11 11</a></li>
+          <li class="contacts-mobile__item"><a href="mailto:info@devstudio.com" class="contacts-mobile__link contacts-mobile__link_theme_grey"> 
+           info@devstudio.com</a></li>
+        </ul>
+        <ul class="social-list-mobile list">
+          <li class="social-list-mobile__item"><a href="" class="social-list-mobile__link">Instagram</a></li>
+          <li class="social-list-mobile__item"><a href="" class="social-list-mobile__link">Twitter</a></li>
+          <li class="social-list-mobile__item"><a href="" class="social-list-mobile__link">Facebook</a></li>
+          <li class="social-list-mobile__item"><a href="" class="social-list-mobile__link">LinkedIn</a></li>
+        </ul>
+        </div>
+      
+      </div>
     </div>
   </header>
     <!--Уникальній контент страниці--> 
@@ -115,7 +150,7 @@
           </ul>
         </div>
       </section>
-      <section class="section section-container">
+      <!-- <section class="section section-container">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
@@ -273,8 +308,8 @@
               </li>
           </ul>
         </div>
-      </section>
-      <section class="section client-section">
+      </section> -->
+      <!-- <section class="section client-section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
         <ul class="client-list list">
@@ -323,10 +358,10 @@
         </ul>
         </div>
         
-      </section>
-  </main>
+      </section> -->
+  </main> 
     <!--Подвал-->
-  <footer class="footer" >
+  <!-- <footer class="footer" >
     <div class="footer-container container">
       <div class="address-footer">
         <a  href="/index.html" class="logo-footer">
@@ -389,7 +424,7 @@
         </form>
       </div>    
     </div>      
-  </footer>
+  </footer> -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-button" data-modal-close>
@@ -448,6 +483,8 @@
 
     </div>
   </div>
+  <script src="./js/mobile-menu.js"></script>
+  
   <script src="./js/modal.js"></script> 
 </body>
 </html>
