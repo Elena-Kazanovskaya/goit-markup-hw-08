@@ -1,16 +1,14 @@
 @media screen and (max-width: 767px) {
     .footer-form {
         display: flex;
-        display: flex;
+        
         flex-direction: column;
         gap: 20px;
     }
-    
     .form-footer {
         display: flex;
         flex-direction: column;
     }
-    
     .mailing-input {
         width: 100%;
         height: 50px;
@@ -55,15 +53,13 @@
 @media screen and (min-width: 768px) {
     .footer-form {
             display: flex;
-            gap: 12px;
-        }
-    
-        .form-footer {
-            margin-left: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
     
         .mailing-input {
-    
             width: 358px;
             height: 50px;
             padding-left: 16px;
@@ -102,6 +98,56 @@
         }
 }
 
+@media screen and (min-width: 1200px) {
+    .footer-form {
+            display: flex;
+            gap: 12px;
+        }
+    
+        .form-footer {
+            margin-left: auto;
+        }
+    
+        // .mailing-input {
+    
+        //     width: 358px;
+        //     height: 50px;
+        //     padding-left: 16px;
+        //     color: var(--border-color);
+        //     background-color: var(--primary-bg-color);
+        //     border: 1px solid rgba(255, 255, 255, 0.3);
+        //     border-radius: 4px;
+        //     transition: border var(--transition-duration-function);
+    
+        //     &:focus {
+        //         outline: none;
+        //         border: 1px solid var(--accent-color);
+        //         border-radius: 4px;
+        //     }
+        // }
+    
+    
+        // .form-button {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     padding: 10px 28px;
+    
+        //     color: var(--primary-white-color);
+        //     background-color: var(--accent-color);
+        //     transition: background-color var(--transition-duration-function);
+    
+        //     &:hover,
+        //     &:focus {
+        //         color: var(--primary-white-color);
+        //         background-color: var(--primary-button-focus);
+        //     }
+        // }
+    
+        // .send-icon {
+        //     margin-left: 10px;
+        // }
+}
 // .footer-form {
 //     display: flex;
 //     gap: 12px;

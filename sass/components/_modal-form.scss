@@ -283,6 +283,7 @@
     }
 
     .form-title {
+        display: block;
         margin-bottom: 20px;
         height: 16px;
         color: var(--primary-white-color);
@@ -291,6 +292,7 @@
         line-height: 1.14px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .checkbox-input {
