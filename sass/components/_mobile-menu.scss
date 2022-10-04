@@ -47,15 +47,24 @@
     
         .mobile-menu__container {
             position: relative;
+            // height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             padding: 48px 40px;
             
         }
 
         .social-list-mobile {
             display: flex;
-            align-items: center;
-            justify-content: center;
-
+            flex-wrap: wrap;
+            gap: 20px;
+            // align-items: center;
+            // justify-content: center;
+           
+            .social-list-mobile__item {
+            display: flex;
+        }
            .social-list-mobile__link {
             font-family: 'Roboto';
             font-weight: 500;
@@ -63,21 +72,21 @@
             line-height: 1.22;
             letter-spacing: 0.02em;
             color: #2196F3;
-           }
+        }
+            .social-list-mobile__link::after {
+                content: "";
+                background-image: url(/images/Line\ 1.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 22px;
+            }
         }
 
-        .nav-mobile {
-            display: flex;
-            // justify-content: space-between;
-            // flex-direction: column;
-            gap: 32px;
-            
-        }
-        .mobile-menu__contacts {
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
-            margin-top: auto;
+        
+
+        .nav-mobile__item:not(:last-child) {
+            margin-bottom: 32px;
         }
 
         .nav-mobile__link {
@@ -96,11 +105,12 @@
         .nav-mobile__link:focus,
         .nav-mobile__link:hover {
             color: var(--accent-color);
-            }
+        }
+
         .contacts-mobile {
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
+            // display: flex;
+            // flex-direction: column;
+            // gap: 32px;
             margin-bottom: 64px;
 
             .contacts-mobile__link_theme_blue {
@@ -122,8 +132,6 @@
                     color: #757575;
                 }
         }
-        
-    
 }
 
 @media screen and (min-width: 768px) {
