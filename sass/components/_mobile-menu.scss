@@ -47,20 +47,19 @@
     
         .mobile-menu__container {
             position: relative;
-            // height: 100vh;
+            
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            gap: 50px;
             padding: 48px 40px;
             
         }
 
         .social-list-mobile {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            // align-items: center;
-            // justify-content: center;
+            justify-content: space-between;
+                        
            
             .social-list-mobile__item {
             display: flex;
@@ -72,6 +71,7 @@
             line-height: 1.22;
             letter-spacing: 0.02em;
             color: #2196F3;
+            
         }
             .social-list-mobile__link::after {
                 content: "";
@@ -80,6 +80,10 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 height: 22px;
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                transform: rotate(90deg);
+                margin-left: 10px;
+
             }
         }
 
@@ -111,6 +115,7 @@
             // display: flex;
             // flex-direction: column;
             // gap: 32px;
+            margin-top: auto;
             margin-bottom: 64px;
 
             .contacts-mobile__link_theme_blue {
@@ -130,6 +135,9 @@
                     line-height: 1.17;
                     letter-spacing: 0.02em;
                     color: #757575;
+                }
+                .contacts-mobile__item:not(:last-child) {
+                    margin-bottom: 32px;
                 }
         }
 }
