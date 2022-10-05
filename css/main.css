@@ -700,7 +700,7 @@ ul {
     border: 2px solid #212121;
     border-radius: 2px;
   }
-  .checkbox-input:checked + .checkbox-icon-on {
+  .checkbox-input:checked ~ .checkbox-icon-on {
     background-color: var(--primary-button-focus);
     border-color: var(--primary-button-focus);
   }
