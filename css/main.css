@@ -659,11 +659,6 @@ ul {
     border-radius: 4px;
     border: 1px solid var(--accent-color);
   }
-  .policy__check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .policy-label {
     display: flex;
     align-items: center;
@@ -700,7 +695,7 @@ ul {
     border: 2px solid #212121;
     border-radius: 2px;
   }
-  .checkbox-input:checked ~ .checkbox-icon-on {
+  .checkbox-input:checked + .checkbox-icon-on {
     background-color: var(--primary-button-focus);
     border-color: var(--primary-button-focus);
   }
@@ -801,11 +796,6 @@ ul {
     border-radius: 4px;
     border: 1px solid var(--accent-color);
   }
-  .policy__check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .policy-label {
     display: flex;
     align-items: center;
@@ -857,14 +847,9 @@ ul {
   }
 }
 @media screen and (min-width: 1200px) {
-  .policy__check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .policy-label {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 @media screen and (max-width: 767px) {
