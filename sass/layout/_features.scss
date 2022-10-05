@@ -38,9 +38,11 @@
                 margin-bottom: 30px;
                 background-color: #F5F4FA;
                 border-radius: 4px;
-    
-            }
         }
+            .features-list__item:not(:last-child) {
+                margin-bottom: 30px;
+            }
+    }
 }
 
 @media screen and ( min-width: 768px) {

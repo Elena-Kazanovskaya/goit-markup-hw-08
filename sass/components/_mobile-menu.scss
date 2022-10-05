@@ -47,7 +47,7 @@
     
         .mobile-menu__container {
             position: relative;
-            
+            height: 100%;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -59,10 +59,13 @@
         .social-list-mobile {
             display: flex;
             justify-content: space-between;
-                        
+            flex-wrap: wrap;
+            gap: 10px;
            
             .social-list-mobile__item {
             display: flex;
+            gap: 10px;
+            
         }
            .social-list-mobile__link {
             font-family: 'Roboto';
