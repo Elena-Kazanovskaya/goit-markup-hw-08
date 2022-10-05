@@ -4,7 +4,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 450px;
+        max-width: 450px;
+        width: calc(100% - 30px);
     
         padding: 40px;
         background-color: var(--primary-white-color);
@@ -88,7 +89,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 528px;
+        max-width: 528px;
 
         padding: 40px;
         background-color: var(--primary-white-color);

@@ -467,7 +467,8 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    max-width: 450px;
+    width: calc(100% - 30px);
     padding: 40px;
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -537,7 +538,7 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    max-width: 528px;
     padding: 40px;
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -669,11 +670,10 @@ ul {
   }
   .form-title {
     margin-bottom: 20px;
-    height: 16px;
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
@@ -807,11 +807,10 @@ ul {
   .form-title {
     display: block;
     margin-bottom: 20px;
-    height: 16px;
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
@@ -844,7 +843,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .policy-label {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.17;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1115,7 +1114,7 @@ ul {
     padding-bottom: 118px;
     margin: 0 auto;
     max-width: 480px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mob.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
     background-position: center;
     background-size: cover;
     background-color: var(--primary-bg-color);
@@ -1143,7 +1142,7 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mob@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1152,7 +1151,7 @@ ul {
     padding-top: 118px;
     padding-bottom: 118px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
     background-position: center;
     background-size: cover;
     background-color: var(--primary-bg-color);
@@ -1180,7 +1179,7 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tab@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1189,7 +1188,7 @@ ul {
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-desk.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk.jpg);
     background-position: center;
     background-size: cover;
     background-color: var(--primary-bg-color);
@@ -1217,7 +1216,7 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-desk@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk@2x.jpg);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1621,11 +1620,10 @@ a:hover .text-overlay, a:focus .text-overlay {
     margin-bottom: 60px;
   }
   .social.title {
-    height: 16px;
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
@@ -1710,11 +1708,10 @@ a:hover .text-overlay, a:focus .text-overlay {
     margin-bottom: 60px;
   }
   .social.title {
-    height: 16px;
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
@@ -1797,11 +1794,10 @@ a:hover .text-overlay, a:focus .text-overlay {
     margin-left: 70px;
   }
   .social.title {
-    height: 16px;
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
