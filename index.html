@@ -506,16 +506,20 @@
         
         <label for="comment" class="form-lable">Коментар</label>
         <textarea class="comment" name="user_comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-                
-        <label for="policy" class="policy-label" >
-        <input type="checkbox" name="policy" id="policy" class="checkbox-input" required>
-        <svg class="checkbox-icon-on" width="16px" height="15px">
+        <div class="policy">
+          <input type="checkbox" name="policy" id="policy" class="checkbox-input" required>
+          <label for="policy" class="policy-label" >
+        <span class="policy__check">
+          <svg class="checkbox-icon-on" width="16px" height="15px">
           <use class="checkbox-icon-own-on" href="./images/icons2.svg#icon-Vector-2"></use>
         </svg>
-          
+        </span>
+                
           Погоджуюся з розсилкою та приймаю&nbsp 
           <a href="" class="contract">Умови договору</a>
         </label>
+        </div>        
+        
         
         <button type="submit" class="form-button-modal button ">Відправити</button>
       </form>
