@@ -52,9 +52,7 @@
 }
 @media screen and (min-width: 1200px) {
     .logo-footer {
-        // color: var(--primary-white-color);
-        // font-family: Raleway, sans-serif;
-        // font-weight: 700;
+       justify-content: flex-start;
         font-size: 26px;
         line-height: 1, 19;
         // text-decoration: none;

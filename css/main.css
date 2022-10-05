@@ -435,6 +435,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .logo-footer {
+    justify-content: flex-start;
     font-size: 26px;
     line-height: 1, 19;
   }
@@ -937,10 +938,14 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: flex;
+    flex-direction: row;
     gap: 12px;
   }
   .form-footer {
     margin-left: auto;
+  }
+  .form-title {
+    text-align: left;
   }
 }
 .button-nav {
@@ -1792,15 +1797,18 @@ a:hover .text-overlay, a:focus .text-overlay {
   }
   .footer-container {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
   }
   .address-footer {
     display: block;
     width: 231px;
+    margin: 0;
   }
   .social-footer {
     margin-top: 12px;
     margin-left: 70px;
+    align-items: flex-start;
   }
   .social.title {
     color: var(--primary-white-color);
@@ -1813,6 +1821,9 @@ a:hover .text-overlay, a:focus .text-overlay {
   .address-list {
     display: inline-block;
     margin-top: 20px;
+  }
+  .address-list .item {
+    text-align: left;
   }
   .address-list .link {
     color: var(--primary-white-color);

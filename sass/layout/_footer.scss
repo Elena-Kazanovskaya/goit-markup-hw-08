@@ -271,17 +271,20 @@
     
         .footer-container {
             display: flex;
+            justify-content: space-between;
             align-items: baseline;
         }
     
         .address-footer {
             display: block;
             width: 231px;
+            margin: 0;
         }
     
         .social-footer {
             margin-top: 12px;
             margin-left: 70px;
+            align-items: flex-start;
         }
     
         .social.title {
@@ -298,7 +301,10 @@
         .address-list {
             display: inline-block;
             margin-top: 20px;
-    
+            
+            .item {
+                text-align: left;
+            }
             .link {
                 color: var(--primary-white-color);
                 font-style: normal;
